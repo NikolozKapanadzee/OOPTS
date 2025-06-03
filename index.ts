@@ -201,3 +201,46 @@
 //    დავბეჯდოთ შექმნილი ექაუნთების transactionHistory.
 
 // */
+
+// class BankAccount {
+//   private accountNumber: number;
+//   private balance: number;
+//   private transactionHistory: string[];
+//   constructor(accountNumber: number, initialBalance: number) {
+//     this.accountNumber = accountNumber;
+//     this.balance = initialBalance;
+//     this.transactionHistory = [];
+//   }
+//   private recordTransaction(description: string): void {
+//     this.transactionHistory.push(`${description}`);
+//   }
+//   getAccountInfo(): string {
+//     return `account Number: ${this.accountNumber}, balance: ${this.balance}`;
+//   }
+//   deposit(amount: number): void {
+//     if (amount <= 0) {
+//       console.log("Deposit amount must be positive.");
+//       return;
+//     }
+//     this.balance += amount;
+//     this.recordTransaction(`deposited ${amount}`);
+//   }
+//   withdraw(amount: number): void {
+//     if (amount > this.balance) {
+//       console.log("amount is higher than balance");
+//     }
+//     this.balance -= amount;
+//     this.recordTransaction(`withdrawed ${amount}`);
+//   }
+//   getTransactionHistory(): string[] {
+//     return this.transactionHistory;
+//   }
+// }
+// const BankAccount1 = new BankAccount(1, 500);
+// const BankAccount2 = new BankAccount(2, 600);
+
+// console.log(BankAccount1.deposit(100));
+// console.log(BankAccount1.getAccountInfo());
+// console.log(BankAccount2.getAccountInfo());
+// console.log(BankAccount1.getTransactionHistory());
+// console.log(BankAccount1.getAccountInfo());
